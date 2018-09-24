@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>wei.bot</title>
+</head>
+
+<body>
+<p>
+  <%= AQI.County %>-<%= AQI.SiteName %>測站<br><br>
+  空氣品質指標(AQI)：<%= AQI.AQI %><br>
+  狀態：<strong><%= AQI.Status %></strong> <br>
+  發布時間：<%= AQI.PublishTime %><br>
+  (資料每小時更新)<br><br>
+<pre>
+  空氣品質指標(AQI)與健康影響：<br>
+    0～50 ：良好<br>
+   51～100：普通<br>
+  101～150：對敏感族群不健康<br>
+  151～200：對所有族群不健康<br>
+  201～300：非常不健康<br>
+  301～500：危害
+</pre>
+</p>
+<p>
+  以上資料來源：國家發展委員會 <a href="https://data.gov.tw/dataset/40448" target="_blank">政府資料開放平台</a>
+</p>
+<p>
+  <a href="https://www.heroku.com" target="_blank">Heroku</a>
+</p>
+</body>
+</html>
