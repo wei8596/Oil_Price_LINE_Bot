@@ -25,11 +25,11 @@ var time = moment().utc().utcOffset(+8).format('hA');
 
 var aqiSites = [];
 
-// pings my heroku app every 5 mins
+// pings my heroku app every 25 mins
 // (app will go to sleep after an hour of inactivity)
 setInterval(function() {
   https.get(myUrl);
-}, 300000); // 5 mins
+}, 1500000); // 25 mins
 
 function readAQI(repos) {
   let data;
